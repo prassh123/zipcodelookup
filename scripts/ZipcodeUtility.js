@@ -19,7 +19,8 @@ module.exports = (function() {
 
   var initConfig = function(dbpath) {
     zipDBPath = dbpath || '../data/zip_code_database.csv';
-    data = fs.readFileSync(path.join(__dirname, zipDBPath), 'utf8').replace(/\r/g, '').split('\n').shift();
+    data = fs.readFileSync(path.join(__dirname, zipDBPath), 'utf8').replace(/\r/g, '').split('\n');
+    data.shift();
     parseCSV();
   };
 
