@@ -1,0 +1,49 @@
+{
+  "name": "zipcodelookup",
+  "version": "0.0.1",
+  "description": "A light weight native JavaScript implementation of zipcode lookup",
+  "keywords": [
+    "zipcoe",
+    "zipcodelookup"
+  ],
+  "homepage": "https://github.com/prassh123/zipcodelookup",
+  "author": {
+    "name": "Prashanth Raghavan",
+    "email": "r.prashanth@gmail.com",
+    "url": ""
+  },
+  "files": [
+    "lib/",
+    "data/",
+    "test/",
+    "scripts/"
+  ],
+  "main": "scripts/ZipcodeUtility.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "engines": {
+    "node": ">=0.6.3"
+  },
+  "scripts": {
+    "test": "nodeunit --reporter=minimal test/tests.js",
+    "updatedb": "node scripts/updatedb.js"
+  },
+  "dependencies": {
+    "csv": "^0.3.7",
+    "path": "^0.4.9",
+    "lodash": "^2.4.1",
+    "q": "^1.0.1"
+  },
+  "devDependencies": {
+    "nodeunit": "~0.7.4"
+  },
+  "readme": "Zipcode lookup\n==========\n\nA zipcode lookup functionality\n",
+  "readmeFilename": "README.md",
+  "bugs": {
+    "url": ""
+  },
+  "_id": "zipcodelookup@0.0.1",
+  "_from": "zipcodelookup@0.0.1"
+}
