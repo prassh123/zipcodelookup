@@ -22,6 +22,7 @@ module.exports = (function() {
     data = fs.readFileSync(path.join(__dirname, zipDBPath), 'utf8').replace(/\r/g, '').split('\n');
     data.shift();
     parseCSV();
+    return _.compact(hash);
   };
 
   var cleanse = function(string) {
@@ -51,7 +52,9 @@ module.exports = (function() {
           world_region: cleanse(line.shift()),
           country: cleanse(line.shift())
         }
-        hash[obj.zipcode] = obj;
+        if (!_.isEmpty(obj)) {
+          hash[obj.zipcode] = obj;
+        }
       }
     });
   };
