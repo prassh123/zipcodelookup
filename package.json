@@ -1,6 +1,6 @@
 {
   "name": "zipcodelookup",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A light weight native JavaScript implementation of zipcode lookup",
   "keywords": [
     "zipcoe",
